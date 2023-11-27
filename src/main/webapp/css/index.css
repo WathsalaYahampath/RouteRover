@@ -1,0 +1,105 @@
+.welcome-hero {
+  position: relative;
+  background:url(../images/welcome-banner.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.welcome-hero:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(42,45,84,.60);
+}
+
+.welcome-hero-txt{text-align: center;padding:290px 0 372px;}
+.welcome-hero-txt h2 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.welcome-hero-txt p {
+    font-size: 18px;
+    text-transform: initial;
+    color: #fff;
+    font-weight: 500;
+    max-width: 735px;
+    margin: 0 auto;
+}
+.welcome-btn {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background: #4e4ffa;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 55px;
+    transition: .3s linear;
+}
+.welcome-btn:hover{
+    background: rgb(1, 208, 250);
+}
+
+
+/*Animations*/
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
+  
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+
+
+
+
+
+/*Responsiveness*/
+
+
+@media screen and (max-width:1199px){
+	.welcome-hero-txt h2{font-size: 40px;}
+}/*max-width:1199px*/
